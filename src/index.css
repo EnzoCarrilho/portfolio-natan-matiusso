@@ -3,14 +3,15 @@
 @theme {
   --color-background: #0f1418;
   --color-foreground: #f0f2f5;
+  --color-void: #0B0C0E;
 
   --color-card: #141a1f;
 
   --color-primary: #20b2a6;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #1f2830;
-  --color-secondary-foreground: #20b2a6;
+  --color-secondary-text: #98958E;
+  --color-secondary-foreground: #20b2a6;    
 
   --color-muted: #252e37;
   --color-muted-foreground: #7a8491;
@@ -38,4 +39,19 @@
   .font-serif{
     font-family: "Playfair Display", serif;
   }
-} 
+}
+
+.main-background {
+  background:
+    radial-gradient(
+      ellipse at 30% 20%,
+      rgba(62, 110, 104, .12),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 75% 80%,
+      rgba(201, 162, 75, .10),
+      transparent 55%
+    ),
+    var(--color-void);
+}

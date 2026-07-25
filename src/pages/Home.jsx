@@ -1,8 +1,10 @@
+import Header from "@/components/Header"
+
 function Home() {
 
   return (
-    <div>
-        
+    <div className="min-h-screen main-background">
+        <Header />
     </div>
   )
 }
