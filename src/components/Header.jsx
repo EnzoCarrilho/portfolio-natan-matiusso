@@ -30,10 +30,10 @@ function Header() {
                 
                 <div className="flex items-center gap-2">
                     <span className="w-3 h-3 bg-[#C1362B] rounded-full animate-pulse" />
-                    <span className="font-mono text-sm">REC</span>
+                    <span className="font-mono text-sm text-primary-text">REC</span>
                 </div>
 
-                <span className="font-mono text-sm">{hour}</span>  
+                <span className="font-mono text-sm text-primary-text">{hour}</span>  
             </div>
           
             

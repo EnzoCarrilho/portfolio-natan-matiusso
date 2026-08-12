@@ -1,11 +1,12 @@
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const navLinks = [
-    { href: "#", label: "Home" },
-    { href: "#about", label: "Sobre" },
-    { href: "#works", label: "Trabalhos" },
-    { href: "#contact", label: "Contato" }
+    { href: "/", label: "Home" },
+    { href: "/about", label: "Sobre" },
+    { href: "/works", label: "Trabalhos" },
+    { href: "/contact", label: "Contato" }
 ]
 
 function Navbar() {
@@ -17,12 +18,12 @@ function Navbar() {
         <nav className="relative flex flex-col items-center py-5 gap-2">
 
             <div className="flex items-center justify-center gap-2">
-                <a
-                    href="#carousel"
-                    className="glass-strong py-3 px-6 rounded-4xl text-sm"
+                <Link
+                    to="/carousel"
+                    className="glass-strong py-3 px-6 rounded-4xl text-sm text-primary-text"
                 >
                     Natan Matiusso
-                </a>
+                </Link>
 
                 <div
                     className="group glass-strong p-2 rounded-full transition-all duration-300 md:cursor-default"
@@ -30,22 +31,20 @@ function Navbar() {
                 >
                     {/* Ícone do menu */}
                     <div className="md:group-hover:hidden">
-                        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                        {isMobileMenuOpen ? <X size={24} color='white' /> : <Menu size={24} color='white' />}
                     </div>
 
                     {/* Menu desktop - Expande*/}
                     <div className="hidden md:group-hover:flex items-center gap-2 animate-fade-in">
-                            {navLinks.map((link, index) => (
-                                <div className='p-0'>
-                                     <a 
-                                        href={link.href} 
-                                        key={index} 
-                                        className="px-6 py-3 text-sm text-foreground hover:text-black rounded-full hover:bg-secondary-light"
-                                        >
-                                            {link.label}
-                                        </a>
+                            {navLinks.map((link) => (
+                                <div key={link.href} className="p-0">
+                                    <Link
+                                        to={link.href}
+                                        className="px-6 py-3 text-sm text-primary-text hover:text-black rounded-full hover:bg-secondary"
+                                    >
+                                        {link.label}
+                                    </Link>
                                 </div>
-                               
                             ))}
                     </div>
                 </div>

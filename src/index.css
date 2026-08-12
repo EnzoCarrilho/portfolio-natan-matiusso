@@ -1,28 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0f1418;
-  --color-foreground: #f0f2f5;
+  --color-background: #33302B;
   --color-void: #0B0C0E;
 
-  --color-secondary: #C9A24B;
-  --color-secondary-light: #EDD39A;
+  --color-primary: #F59E0B;
+  --color-secondary: #FFC663;
 
-
-  --color-primary: #20b2a6;
-  --color-primary-foreground: #ffffff;
-
+  --color-primary-text: #f0f2f5;
   --color-secondary-text: #98958E;
-   
-  --color-muted: #252e37;
-  --color-muted-foreground: #7a8491;
 
+  --color-foreground: #8F713F;
+  --color-muted-foreground: #5C503B
+   
+  --color-highlight: #f5a623;
+  --color-surface: #1a2329;
   --color-border: #242b32;
 
   --radius: 0.75rem;
 
-  --color-highlight: #f5a623;
-  --color-surface: #1a2329;
 }
 
 @layer base{
@@ -33,7 +29,7 @@
 
   body{
     background-color: var(--color-background);
-    color: var(--color-foreground);
+    color: var(--color-primary-text);
     font-family: "Inter", sans-serif;
   }
 
@@ -54,7 +50,7 @@
   }
 
   .glass-strong{
-    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+    background-color: color-mix(in srgb, var(--color-surface) 100%, transparent);
     backdrop-filter: blur(24px);
     border: 1px, solid color-mix(in srgb, var(--color-border) 60%, transparent);
   }
@@ -206,7 +202,17 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-.scrollbar-hide::-webkit-scrollbar {
+
+  .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  video::-webkit-media-controls {
+    display: none !important;
+  }
+
+  video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+  }
+
 }

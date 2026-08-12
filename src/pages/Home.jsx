@@ -1,24 +1,60 @@
 import Header from "@/components/Header"
 import Navbar from "@/components/Navbar"
-import Carousel from "@/components/Carousel"
+import MediaContainer from "@/components/MediaContainer";
+import video from "../assets/videos/video.mov";
+import img1 from "../assets/projects/img1.jpeg"
+import img2 from "../assets/projects/img2.jpg"
 
 function Home() {
   return (
-    <div className="relative h-screen min-h-screen overflow-hidden main-background flex flex-col">
-      <Header />
-
-      <div className="relative flex-1 min-h-0 md:static md:flex md:flex-col">
+    <div className="relative h-screen min-h-screen flex flex-col bg-background">
       
-        <div className="absolute top-0 left-0 right-0 z-20 md:static">
-          <Navbar />
+      <Header></Header>
+
+      <Navbar></Navbar>
+
+      <main className="h-full w-full py-4 gap-20">
+
+        <div className="flex px-32">
+
+          <div className="flex items-center justify-center w-1/2">
+            <MediaContainer videoSrc={video} images={[img1, img2]} title="asdfljkn" description="asdfjasdjfsdfnasldjfasjdfbaksdjfbaksdjfb"/>
+          </div>
+
+          <div className="flex flex-col items-center justify-around w-1/2">
+            <h2>Natan Matiusso</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+              text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took 
+              a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, 
+              but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently 
+              with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+            </p>
+          </div> 
+          
         </div>
 
-      
-        <main className="h-full w-full md:flex-1 md:flex md:items-center md:justify-center">
-          <Carousel />
-        </main>
+         <div className="flex px-32">
 
-      </div>
+          <div className="flex flex-col items-center justify-around w-1/2">
+            <h2>Natan Matiusso</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+              text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took 
+              a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, 
+              but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently 
+              with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+            </p>
+          </div> 
+
+          <div className="flex items-center justify-center w-1/2">
+            <MediaContainer videoSrc={video} images={[img1, img2]} flip/>
+          </div>
+          
+        </div>
+
+      </main>
+      
     </div>
   )
 }
