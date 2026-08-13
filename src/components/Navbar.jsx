@@ -20,22 +20,22 @@ function Navbar() {
             <div className="flex items-center justify-center gap-2">
                 <Link
                     to="/carousel"
-                    className="glass-strong py-3 px-6 rounded-4xl text-sm text-primary-text"
+                    className="glass-strong opacity-70 lg:opacity-100 py-3 px-6 rounded-4xl text-sm text-primary-text transition-opacity duration-300"
                 >
                     Natan Matiusso
                 </Link>
 
                 <div
-                    className="group glass-strong p-2 rounded-full transition-all duration-300 md:cursor-default"
+                    className="group glass-strong opacity-70 lg:opacity-100 p-2 rounded-full transition-all duration-300 lg:cursor-default"
                     onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                 >
                     {/* Ícone do menu */}
-                    <div className="md:group-hover:hidden">
+                    <div className="lg:group-hover:hidden">
                         {isMobileMenuOpen ? <X size={24} color='white' /> : <Menu size={24} color='white' />}
                     </div>
 
-                    {/* Menu desktop - Expande*/}
-                    <div className="hidden md:group-hover:flex items-center gap-2 animate-fade-in">
+                    {/* Menu desktop - Expande no hover (só lg+) */}
+                    <div className="hidden lg:group-hover:flex items-center gap-2 animate-fade-in">
                             {navLinks.map((link) => (
                                 <div key={link.href} className="p-0">
                                     <Link
@@ -50,19 +50,19 @@ function Navbar() {
                 </div>
             </div>
 
-            {/* Menu mobile */}
+            {/* Menu mobile/tablet - abre por clique, vertical */}
             <div
-                className={`${isMobileMenuOpen ? "flex" : "hidden"} md:hidden absolute top-full left-0 z-50 glass-strong flex-col items-center gap-4 w-full py-6 rounded-2xl animate-fade-in`}
+                className={`${isMobileMenuOpen ? "flex" : "hidden"} lg:hidden absolute top-full left-0 z-50 glass-strong flex-col items-center gap-4 w-full py-6 rounded-2xl animate-fade-in`}
             >
                 {navLinks.map((link) => (
-                    <a
+                    <Link
                         key={link.href}
-                        href={link.href}
+                        to={link.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-sm"
+                        className="text-sm text-primary-text"
                     >
                         {link.label}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </nav>

@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import Navbar from "@/components/Navbar"
+import Footer from '@/components/Footer'
 import MediaContainer from "@/components/MediaContainer";
 import video from "../assets/videos/video.mov";
 import img1 from "../assets/projects/img1.jpeg"
@@ -54,6 +55,8 @@ function Home() {
         </div>
 
       </main>
+
+      <Footer></Footer>
       
     </div>
   )
