@@ -22,7 +22,7 @@ function Header() {
     }, []);
 
     return (
-        <header className="bg-black flex items-center justify-between px-4 py-2 border-b border-border">
+        <header className="bg-black flex items-center w-full justify-between py-2 px-3 border-b border-border">
             
             <span className="text-xs text-secondary-text font-mono truncate md:text-sm">NATAN MATIUSSO - SHOWREEL</span>
 

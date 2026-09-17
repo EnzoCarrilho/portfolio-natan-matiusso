@@ -6,7 +6,7 @@ const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "Sobre" },
     { href: "/works", label: "Trabalhos" },
-    { href: "/contact", label: "Contato" }
+
 ]
 
 function Navbar() {
@@ -20,7 +20,7 @@ function Navbar() {
             <div className="flex items-center justify-center gap-2">
                 <Link
                     to="/carousel"
-                    className="py-2 px-3 text-xs glass-strong  md:py-3 md:px-6 rounded-4xl md:text-sm text-primary-text transition-opacity duration-300"
+                    className="py-2 px-3 text-xs glass-strong  md:py-2 md:px-8 rounded-4xl md:text-base text-primary-text transition-opacity duration-300"
                 >
                     Natan Matiusso
                 </Link>
@@ -44,7 +44,7 @@ function Navbar() {
                                 <div key={link.href} className="p-0">
                                     <Link
                                         to={link.href}
-                                        className="px-6 py-3 text-sm text-primary-text hover:text-black rounded-full hover:bg-secondary"
+                                        className="px-6 py-3 text-sm md:text-base text-primary-text hover:text-black rounded-full hover:bg-secondary"
                                     >
                                         {link.label}
                                     </Link>

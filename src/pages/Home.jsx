@@ -9,13 +9,13 @@ import img2 from "../assets/projects/img2.jpg"
 
 function Home() {
   return (
-    <div className="relative min-h-screen flex flex-col bg-background">
+    <div className="relative min-h-screen flex flex-col bg-background ">
       
       <Header></Header>
 
       <Navbar></Navbar>
 
-      <main className="flex-1 w-full py-4">
+      <main className="flex-1 w-full py-4 px-3">
 
        <HeroRow
           mediaProps={{ videoSrc: video, images: [img1, img2] }}
@@ -34,7 +34,10 @@ function Home() {
 
       </main>
 
-      <Footer></Footer>
+      <div className="px-3">
+        <Footer></Footer>
+      </div>
+      
       
     </div>
   )
