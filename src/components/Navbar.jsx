@@ -20,7 +20,7 @@ function Navbar() {
             <div className="flex items-center justify-center gap-2">
                 <Link
                     to="/carousel"
-                    className="py-2 px-3 text-xs glass-strong  md:py-2 md:px-8 rounded-4xl md:text-base text-primary-text transition-opacity duration-300"
+                    className="py-2 px-4 text-xs glass-strong  md:py-2 md:px-8 rounded-4xl md:text-base text-primary-text transition-opacity duration-300"
                 >
                     Natan Matiusso
                 </Link>

@@ -11,9 +11,12 @@ function Home() {
   return (
     <div className="relative min-h-screen flex flex-col bg-background ">
       
-      <Header></Header>
+      <div className="sticky top-0 z-50">
+        <Header></Header>
 
-      <Navbar></Navbar>
+        <Navbar></Navbar>
+      </div>
+      
 
       <main className="flex-1 w-full py-4 px-3">
 
