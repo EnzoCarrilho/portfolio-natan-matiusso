@@ -24,16 +24,16 @@ function Header() {
     return (
         <header className="bg-black flex items-center justify-between px-4 py-2 border-b border-border">
             
-            <span className="text-secondary-text text-sm font-mono truncate">NATAN MATIUSSO - SHOWREEL</span>
+            <span className="text-xs text-secondary-text font-mono truncate md:text-sm">NATAN MATIUSSO - SHOWREEL</span>
 
             <div className="flex items-center justify-center gap-2">
                 
                 <div className="flex items-center gap-2">
-                    <span className="w-3 h-3 bg-[#C1362B] rounded-full animate-pulse" />
-                    <span className="font-mono text-sm text-primary-text">REC</span>
+                    <span className="w-2 h-2 bg-[#C1362B] rounded-full animate-pulse md:w-3 md:h-3" />
+                    <span className="text-xs font-mono text-primary-text md:text-sm">REC</span>
                 </div>
 
-                <span className="font-mono text-sm text-primary-text">{hour}</span>  
+                <span className="text-xs font-mono text-primary-text md:text-sm">{hour}</span>  
             </div>
           
             

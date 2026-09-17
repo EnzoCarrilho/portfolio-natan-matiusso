@@ -20,18 +20,22 @@ function Navbar() {
             <div className="flex items-center justify-center gap-2">
                 <Link
                     to="/carousel"
-                    className="glass-strong opacity-70 lg:opacity-100 py-3 px-6 rounded-4xl text-sm text-primary-text transition-opacity duration-300"
+                    className="py-2 px-3 text-xs glass-strong  md:py-3 md:px-6 rounded-4xl md:text-sm text-primary-text transition-opacity duration-300"
                 >
                     Natan Matiusso
                 </Link>
 
                 <div
-                    className="group glass-strong opacity-70 lg:opacity-100 p-2 rounded-full transition-all duration-300 lg:cursor-default"
+                    className="group glass-strong p-2 rounded-full transition-all duration-300 lg:cursor-default"
                     onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                 >
                     {/* Ícone do menu */}
                     <div className="lg:group-hover:hidden">
-                        {isMobileMenuOpen ? <X size={24} color='white' /> : <Menu size={24} color='white' />}
+                        {isMobileMenuOpen ? ( 
+                            <X className="w-3 h-3 md:w-6 md:h-6" color='white' /> 
+                        ) : ( 
+                            <Menu className="w-4 h-4 md:w-6 md:h-6" color='white' />
+                        )}
                     </div>
 
                     {/* Menu desktop - Expande no hover (só lg+) */}
@@ -59,7 +63,7 @@ function Navbar() {
                         key={link.href}
                         to={link.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-sm text-primary-text"
+                        className="text-xs md:text-sm text-primary-text"
                     >
                         {link.label}
                     </Link>
