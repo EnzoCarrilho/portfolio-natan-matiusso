@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 
-import projeto1 from "@/assets/projects/img1.jpeg";
-import projeto2 from "@/assets/projects/img2.jpg";
-import projeto3 from "@/assets/projects/img3.jpg";
+import projeto1 from "@/assets/projects/images/img1.jpeg";
+import projeto2 from "@/assets/projects/images/img2.jpg";
+import projeto3 from "@/assets/projects/images/img3.jpg";
 
 const images = [
   { url: projeto1, title: "Projeto 1" },
