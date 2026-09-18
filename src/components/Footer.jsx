@@ -10,21 +10,21 @@ function Footer (){
             <div className="flex justify-between w-full lg:w-min px-2 lg:flex-col md:gap-2 lg:gap-4 lg:justify-self-center">
                 <Link
                     to="/"
-                    className="text-secondary-text font-sans hover:text-secondary md:text-2xl lg:text-xl"
+                    className="text-secondary-text font-sans hover:text-secondary md:text-xl lg:text-xl"
                 >
                     Home
                 </Link>
 
                 <Link
                     to="/about"
-                    className="text-secondary-text font-sans hover:text-secondary md:text-2xl lg:text-xl"
+                    className="text-secondary-text font-sans hover:text-secondary md:text-xl lg:text-xl"
                 >
                     Sobre
                 </Link>
 
                 <Link 
                     to="/works" 
-                    className="text-secondary-text font-sans hover:text-secondary md:text-2xl lg:text-xl"
+                    className="text-secondary-text font-sans hover:text-secondary md:text-xl lg:text-xl"
                 >
                     Trabalhos
                 </Link>
@@ -39,7 +39,7 @@ function Footer (){
                     className='flex items-center gap-1 md:gap-2'
                 >
                     <FaInstagram className='w-4 h-4 md:w-6 md:h-6 lg:w-6 lg:h-6 text-secondary-text'/>
-                    <span className='text-secondary-text font-mono md:text-2xl lg:text-xl'>@natanmatiusso_</span>
+                    <span className='text-secondary-text font-mono md:text-xl lg:text-xl'>@natanmatiusso_</span>
                 </a>
 
                   <a 
@@ -47,7 +47,7 @@ function Footer (){
                     className='flex items-center gap-1 md:gap-2'
                 >
                     <FaEnvelope className='w-4 h-4 md:w-6 md:h-6 lg:w-6 lg:h-6 text-secondary-text'/>
-                    <span className='text-secondary-text font-mono md:text-2xl lg:text-xl'>natanmatiusso@gmail.com</span>
+                    <span className='text-secondary-text font-mono md:text-xl lg:text-xl'>natanmatiusso@gmail.com</span>
                 </a>
                 
             </div>
