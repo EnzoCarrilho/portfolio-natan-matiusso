@@ -21,7 +21,7 @@ function Home() {
       <main className="flex-1 w-full py-4 px-3">
 
        <HeroRow
-          mediaProps={{ videoSrc: video, images: [img1, img2] }}
+          mediaProps={{ videoSrc: video, images: [img2, img1] }}
           title="Natan Matiusso"
           description="Filmmaker e Editor"
         />

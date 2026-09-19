@@ -8,29 +8,29 @@ export const galleryItems = [
     id: 1,
     archive_type: "image",
     src: img2,
-    title: "projeto 1",
-    type: "artistico"
+    title: "Projeto 1",
+    type: "Artístico"
   },
   {
     id: 2,
     archive_type: "video",
     src: video,
     poster: "",
-    title: "projeto 2",
-    type: "campanha"
+    title: "Projeto 2",
+    type: "Campanha"
   },
   {
     id: 3,
     archive_type: "image",
     src: img1,
-    title: "projeto 3",
-    type: "artistico"
+    title: "Projeto 3",
+    type: "Artístico"
   },
   {
     id: 4,
     archive_type: "image",
     src: img3,
-    title: "projeto 4",
-    type: "artistico"
+    title: "Projeto 4",
+    type: "Artístico"
   }
 ];
